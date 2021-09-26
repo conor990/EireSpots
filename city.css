@@ -1,0 +1,230 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+/*Navbar style start*/
+
+.navbar {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:rgb(255, 255, 255);
+}
+
+.brand-title {
+	font-size:1.5rem;
+	margin:.5rem;
+    margin: auto;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display:flex;
+}
+
+.navbar-links li {
+	list-style:none;
+}
+
+.navbar-links li a {
+	text-decoration:none;
+	color:rgb(26, 26, 26);
+	padding:1rem;
+	display:block;
+}
+
+.navbar-links li:hover {
+	background-color:rgb(251, 232, 62);
+}
+
+
+
+
+.toggle-button{
+	position:absolute;
+	top:.75rem;
+	right:1rem;
+	display:none;
+	flex-direction:column;
+	justify-content:space-between;
+	width: 30px;
+	height:21px;
+	
+}
+
+.toggle-button .bar {
+	height:3px;
+	width:100%;
+	background-color:rgb(26, 26, 26);
+	border-radius:10px;
+}
+
+
+.logo{
+    width: 175px;
+    height:60px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+.logo:hover{
+    -webkit-filter: drop-shadow(2px 2px 2px #666666);
+    filter: drop-shadow(2px 2px 2px #fbdf3f );
+}
+
+/*Navbar style end*/
+
+.top{
+	margin-top: 30px;
+}
+.row{
+    font-family: 'Barlow Condensed', sans-serif;
+	text-align: center;
+	margin-bottom: 45px;
+}
+button{
+	font-size: 60px !important;
+    border:5px solid white;
+    cursor: pointer;
+    transition:0.8s;
+    outline:none;
+    overflow: hidden;
+    position: relative;
+	background-color: white;
+	border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(58, 57, 57);
+    text-shadow: 1px 1px white;
+    border:5px solid rgb(251, 232, 62);
+	border-radius: 10px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .logo{
+        margin: auto;
+    }
+
+	.toggle-button{
+		display:flex;
+	}
+	
+	.navbar-links{
+		display:none; 
+	}
+	
+	.navbar{
+		flex-direction:column;
+		align-items:flex-start;
+	}
+	
+	.navbar-links ul {
+		flex-direction:column;
+		width:100%;
+	}
+	
+	.navbar-links li {
+		text-align:center;
+	}
+	
+	.navbar-links li a {
+		padding:.5rem 1rem;
+	}
+	
+	.navbar-links.active{
+		display:flex;
+	}
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border:3px solid #ffffef;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(
+        45deg,
+        #faf620,
+        #f3f3f3
+    );
+    border-radius: 4px;
+}
+
